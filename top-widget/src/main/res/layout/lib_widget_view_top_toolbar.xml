@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@id/libWidgetTopToolbar"
+	android:layout_width="match_parent"
+	android:layout_height="48dp"
+	app:contentInsetEnd="0dp"
+	app:contentInsetStart="0dp"
+	app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+	
+	<ImageButton
+		android:id="@id/libWidgetIbtnTopToolbarLeft"
+		style="@style/ButtonDefaultStyle"
+		android:layout_width="48dp"
+		android:layout_height="48dp"
+		android:src="@drawable/lib_widget_icon_back_s"
+		android:visibility="visible"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		tools:ignore="ContentDescription" />
+	
+	<Button
+		android:id="@id/libWidgetBtnTopToolbarLeft"
+		style="@style/ButtonDefaultStyle"
+		android:layout_width="64dp"
+		android:layout_height="48dp"
+		android:textSize="16sp"
+		android:visibility="gone"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		tools:text="返回"
+		tools:textColor="@android:color/black" />
+	
+	<TextView
+		android:id="@id/libWidgetTvTopToolbarTitle"
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_marginStart="72dp"
+		android:layout_marginEnd="72dp"
+		android:ellipsize="middle"
+		android:gravity="center"
+		android:singleLine="true"
+		android:textSize="18sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		tools:text="这里是显示页面标题的地方"
+		tools:textColor="@android:color/black" />
+	
+	<ImageButton
+		android:id="@id/libWidgetIbtnTopToolbarRight"
+		style="@style/ButtonDefaultStyle"
+		android:layout_width="48dp"
+		android:layout_height="48dp"
+		android:gravity="center"
+		android:src="@drawable/lib_widget_icon_menu_n"
+		android:visibility="gone"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		tools:ignore="ContentDescription" />
+	
+	<Button
+		android:id="@id/libWidgetBtnTopToolbarRight"
+		style="@style/ButtonDefaultStyle"
+		android:layout_width="64dp"
+		android:layout_height="48dp"
+		android:textSize="16sp"
+		android:visibility="gone"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		tools:text="确认"
+		tools:textColor="@android:color/black" />
+</android.support.constraint.ConstraintLayout>

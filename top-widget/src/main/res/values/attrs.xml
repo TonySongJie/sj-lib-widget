@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<declare-styleable name="TopToolbar">
+		<attr name="leftText" format="string|reference" />
+		<attr name="leftTextColor" format="string|reference" />
+		<attr name="leftIcon" format="reference" />
+		
+		<attr name="titleText" format="string|reference" />
+		<attr name="titleColor" format="color" />
+		
+		<attr name="rightText" />
+		<attr name="rightTextColor" />
+		<attr name="rightIcon" format="reference" />
+	</declare-styleable>
+</resources>

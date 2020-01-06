@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<item name="libWidgetTopToolbar" type="id" />
+	
+	<item name="libWidgetRlaytToolbarLeft" type="id" />
+	<item name="libWidgetBtnTopToolbarLeft" type="id" />
+	<item name="libWidgetIbtnTopToolbarLeft" type="id" />
+	
+	<item name="libWidgetTvTopToolbarTitle" type="id" />
+	
+	<item name="baseRlaytToolbarRight" type="id" />
+	<item name="libWidgetBtnTopToolbarRight" type="id" />
+	<item name="libWidgetIbtnTopToolbarRight" type="id" />
+</resources>
