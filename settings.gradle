@@ -1,1 +1,1 @@
-include ':app', ':top-widget'
+include ':app', ':lib-widget'
