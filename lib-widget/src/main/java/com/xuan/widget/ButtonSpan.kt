@@ -27,7 +27,7 @@ class ButtonSpan : ClickableSpan {
 
     override fun updateDrawState(ds: TextPaint) {
         ds.color = ContextCompat.getColor(mContext, mColorId)
-        ds.textSize = dip2px(16f).toFloat()
+        ds.textSize = dip2px(14f).toFloat()
         ds.isUnderlineText = false
     }
 
