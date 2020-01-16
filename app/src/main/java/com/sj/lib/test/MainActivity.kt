@@ -12,5 +12,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         topToolbarTest.addToolbarLeftOnClickListener(View.OnClickListener { finish() })
+
+        appEtvText.initWidth(windowManager.defaultDisplay.width)
+        appEtvText.initMaxLines(2)
+        appEtvText.setCloseText("测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试")
     }
 }
