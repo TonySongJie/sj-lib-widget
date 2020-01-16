@@ -18,8 +18,8 @@ class ExpandTextView : TextView {
     private var mMaxLines = 2// TextView最大行数，默认两行
     private var spanClose: SpannableString? = null// 收起的文案(颜色处理)
     private var spanExpand: SpannableString? = null// 展开的文案(颜色处理)
-    private val textExpand = "  全部"
-    private val textClose = "  收起"
+    private val textExpand = "全部"
+    private val textClose = "收起"
 
     constructor(context: Context) : super(context) {
         initCloseEnd()
@@ -89,11 +89,11 @@ class ExpandTextView : TextView {
         }
         val layout1 = createWorkingLayout(text)
         val layout2 = createWorkingLayout(text + textClose)
-        if (layout2.lineCount > layout1.lineCount) {
-            setText(originText + "\n")
-        } else {
-            setText(originText)
-        }
+        setText("$originText ")
+//        if (layout2.lineCount > layout1.lineCount) {
+//        } else {
+//            setText(originText)
+//        }
         append(spanExpand)
         movementMethod = LinkMovementMethod.getInstance()
     }
@@ -107,7 +107,7 @@ class ExpandTextView : TextView {
                 maxLines = Integer.MAX_VALUE
                 setExpandText(originText)
             },
-            android.R.color.holo_blue_bright
+            R.color.colorYellow
         )
         spanClose!!.setSpan(span, 0, content.length, Spanned.SPAN_INCLUSIVE_EXCLUSIVE)
     }
@@ -118,7 +118,7 @@ class ExpandTextView : TextView {
         val span = ButtonSpan(context, OnClickListener {
             maxLines = mMaxLines
             setCloseText(originText)
-        }, android.R.color.holo_blue_bright)
+        }, R.color.colorYellow)
 
         spanExpand!!.setSpan(span, 0, content.length, Spanned.SPAN_INCLUSIVE_EXCLUSIVE)
     }
