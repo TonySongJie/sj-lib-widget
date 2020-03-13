@@ -1,16 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	
-	<declare-styleable name="TopToolbar">
-		<attr name="leftText" format="string|reference" />
-		<attr name="leftTextColor" format="string|reference" />
-		<attr name="leftIcon" format="reference" />
-		
-		<attr name="titleText" format="string|reference" />
-		<attr name="titleColor" format="color" />
-		
-		<attr name="rightText" />
-		<attr name="rightTextColor" />
-		<attr name="rightIcon" format="reference" />
-	</declare-styleable>
+
+    <declare-styleable name="TopToolbar">
+        <attr name="leftText" format="string|reference" />
+        <attr name="leftTextColor" format="string|reference" />
+        <attr name="leftIcon" format="reference" />
+
+        <attr name="titleText" format="string|reference" />
+        <attr name="titleColor" format="color" />
+
+        <attr name="rightText" format="string|reference" />
+        <attr name="rightTextColor" format="string|reference" />
+        <attr name="rightIcon" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="BadgeViewPro">
+        <attr name="shape" format="integer">
+            <enum name="shape_circle" value="0" />
+            <enum name="shape_oval" value="1" />
+            <enum name="shape_rectangle" value="2" />
+            <enum name="shape_round_rectangle" value="3" />
+        </attr>
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="bgColor" format="color" />
+        <attr name="shape_type" format="integer" />
+    </declare-styleable>
 </resources>
