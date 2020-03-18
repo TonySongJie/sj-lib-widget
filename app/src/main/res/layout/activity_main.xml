@@ -27,4 +27,32 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/showLetter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#45666666"
+        android:padding="4dp"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="A" />
+
+    <com.xuan.widget.LetterNavigationView
+        android:id="@+id/lnvTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:background_color_down="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topToolbarTest"
+        app:letter_div_height="4dp"
+        app:text_color="#999999"
+        app:text_color_down="#999999"
+        app:text_size="12sp" />
 </android.support.constraint.ConstraintLayout>
